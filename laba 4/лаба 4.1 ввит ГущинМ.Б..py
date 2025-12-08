@@ -1,5 +1,5 @@
 #import math
-#num = int(input('������� ����� �����: ' ))
+#num = int(input('Введите целое число: ' ))
 #r = math.sqrt(num)
 #print(r)
 

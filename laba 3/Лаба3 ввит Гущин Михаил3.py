@@ -1,30 +1,30 @@
 def read_all(filee):
     try:
         with open(filee, 'r') as file:
-            print("=== Чтение всего файла ===")
+            print("=== Р§С‚РµРЅРёРµ РІСЃРµРіРѕ С„Р°Р№Р»Р° ===")
             content = file.read()
             print(content)
     except FileNotFoundError:
-        print(f"Ошибка: файл '{filee}' не найден.")
+        print(f"РћС€РёР±РєР°: С„Р°Р№Р» '{filee}' РЅРµ РЅР°Р№РґРµРЅ.")
 
 def read_lines(fl):
     try:
         with open(fl, 'r') as file:
-            print("=== Построчное чтение ===")
+            print("=== РџРѕСЃС‚СЂРѕС‡РЅРѕРµ С‡С‚РµРЅРёРµ ===")
             line_num = 1
             for line in file:
                 print(f"{line_num}: {line}", end='')
                 line_num += 1
     except FileNotFoundError:
-        print(f"Ошибка: файл '{fl}' не найден.")
+        print(f"РћС€РёР±РєР°: С„Р°Р№Р» '{fl}' РЅРµ РЅР°Р№РґРµРЅ.")
 
-r = int(input("Режим чтения: (всего файла - 1; построчно - 2): "))
+r = int(input("Р РµР¶РёРј С‡С‚РµРЅРёСЏ: (РІСЃРµРіРѕ С„Р°Р№Р»Р° - 1; РїРѕСЃС‚СЂРѕС‡РЅРѕ - 2): "))
 if r==1:
     read_all('example.txt')
 elif r==2:
     read_lines('example.txt')
 else:
-    print('идите нафиг нет такого типа чтения')
+    print('РёРґРёС‚Рµ РЅР°С„РёРі РЅРµС‚ С‚Р°РєРѕРіРѕ С‚РёРїР° С‡С‚РµРЅРёСЏ')
 
 
 
@@ -41,29 +41,29 @@ else:
 
 
 #def read_all(filee):
-    #"""Читает и выводит весь файл сразу."""
+    #"""пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ."""
     #try:
         #with open(filee, 'r') as file:
-            #print("=== Чтение всего файла ===")
+            #print("=== пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ ===")
             #print(file.read())
     #except FileNotFoundError:
-        #print(f"Ошибка: файл '{filee}' не найден.")
+        #print(f"пїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ '{filee}' пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.")
 
 
 #def read_lines(filee):
-    #"""Читает и выводит файл построчно с нумерацией."""
+    #"""пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."""
     #try:
         #with open(filee, 'r') as file:
-            #print("=== Построчное чтение ===")
+            #print("=== пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ===")
             #line_num = 1
             #for line in file:
                 #print(f"{line_num}: {line.rstrip()}")
                 #line_num += 1
     #except FileNotFoundError:
-        #print(f"Ошибка: файл '{filee}' не найден.")
+        #print(f"пїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ '{filee}' пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.")
 
 
-## Выполнение задания 1
+## пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1
 #read_all('example.txt')
 
 #read_lines('example.txt')

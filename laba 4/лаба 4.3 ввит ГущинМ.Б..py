@@ -1,14 +1,14 @@
 from moduleee import numbers, strings
 
 try:
-    a = float(input('Введите число: '))
-    b = float(input('Введите число: '))
-    print("Сумма чисел:", numbers.sumnum(a, b))
-    print("Произведение чисел:", numbers.umnnum(a, b))
+    a = float(input('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: '))
+    b = float(input('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: '))
+    print("РЎСѓРјРјР° С‡РёСЃРµР»:", numbers.sumnum(a, b))
+    print("РџСЂРѕРёР·РІРµРґРµРЅРёРµ С‡РёСЃРµР»:", numbers.umnnum(a, b))
 except ValueError:
-    print("Ошибка: введены некорректные данные.")
+    print("РћС€РёР±РєР°: РІРІРµРґРµРЅС‹ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ.")
     
 
-text = input("Введите текст: ")
-print("перевернутый текст: ", strings.revese_string(text))
-print("количество символов в тексте: ", strings.count(text))
+text = input("Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚: ")
+print("РїРµСЂРµРІРµСЂРЅСѓС‚С‹Р№ С‚РµРєСЃС‚: ", strings.revese_string(text))
+print("РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РІ С‚РµРєСЃС‚Рµ: ", strings.count(text))
