@@ -5,7 +5,7 @@ for r in range(1, r+1,2):
 
     #if r%2==0:
         #print(r)
-#proba
+
 #while r>=1:
     #print(r)
     #r-=1
@@ -18,3 +18,4 @@ if a==b:
     print('одинаковые')
 else:
     print("наибольшее число:", max(a, b))
+
