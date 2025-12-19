@@ -10,11 +10,11 @@ import datetime
 #4.1
 def sqrt(num):
     return math.sqrt(num)
-num = float(input(': '))
+num = float(input('Введите число для вычисления квадратного корня: '))
 r = sqrt(num)
-print(": ", r)
+print("Квадратный корень: ", r)
 
 
 #4.2
 tm = datetime.datetime.now()
-print(': ', tm)
+print('Текущее время и дата: ', tm)
